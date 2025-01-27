@@ -16,6 +16,13 @@ app.get('/her', (req, res) => {
         <h1>Her er en overskrift</h1>
         <p>Og her er en paragraf</p>
     `);
+    });
+    app.get('/klassen', (req, res) => {
+        res.send(`
+            <p>Lucas barter 18 år</p>
+            <p>Kristian aashansen 18 år</p>
+            <p>Michael tønnessen 17 år</p>
+        `);
 });
 // Så starter vi serveren, som nå lytter på port 3000:
 app.listen(3000, () => {
